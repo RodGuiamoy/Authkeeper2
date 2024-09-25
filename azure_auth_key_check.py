@@ -51,11 +51,11 @@ def get_service_principal_info(access_token, client_id):
 def display_identity_info(service_principal_data):
     """Prints the service principal details."""
     display_name = service_principal_data.get("displayName", "Unknown")
-    app_id = service_principal_data.get("appId", "Unknown")
+    # app_id = service_principal_data.get("appId", "Unknown")
     service_principal_id = service_principal_data.get("id", "Unknown")
     
     # Output the result (similar to AWS's sts.get_caller_identity)
-    print(f"DisplayName: {display_name}, AppID: {app_id}, ServicePrincipalID: {service_principal_id}")
+    print(f"DisplayName: {display_name}, ServicePrincipalID: {service_principal_id}")
 
 
 def main():
